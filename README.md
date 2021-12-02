@@ -34,8 +34,6 @@ Before running any demonstration or training script, the installed conda environ
 
 ### Using the pre-built Docker image from Docker hub (recommended)
 
-[<img src=".github/dockerhub.svg" width=200 />](https://hub.docker.com/repository/docker/kaland/duckietown-rl/)
-
 [DockerHub: kaland/duckietown-rl](https://hub.docker.com/repository/docker/kaland/duckietown-rl/)
 
 *Requirements*: [`docker`](https://docs.docker.com/get-docker/) or [`nvidia-docker`](https://github.com/NVIDIA/nvidia-docker) installed on your computer.
@@ -96,9 +94,11 @@ When you are asked if you trust the authenticity of host type `yes` and when pro
 
 :warning: Don't fortget to change the password for the `duckie` and the `root` users after login!
 
-In the container update `Ray` and instrall `tree`:
-```pip3 install ray=1.8.0```
-```pip3 install tree```
+In the container update `Ray` and instrall `tree` by:
+```
+pip3 install ray=1.8.0
+pip3 install tree
+```
 
 ### Recommended steps after environment setup
 
@@ -108,8 +108,10 @@ After setting up the conda environment *or* ssh-ing into the docker container, I
 logger.setLevel(logging.DEBUG) -> logger.setLevel(logging.WARNING) 
 ```
 
-For better observation of data change during training it's recommended to log in into your Weights & Biases account:
-```wandb login```
+For better observation of data change during training it's recommended to log in into your Weights & Biases account by:
+```
+wandb login
+```
 
 ## Train a lane-following policy
 
@@ -154,19 +156,12 @@ The same simulation can be viewed from a fixed, bird's eye perspective, instead 
 
 ``` python -m experiments.test-rllib --top-view```
 
-Default mode               |  Top view
-:-------------------------:|:-------------------------:
-![](.github/SimulatorScreenshot1.png) |![](.github/SimulatorScreenshot2.png) 
-
-
 ## Evaluate closed loop performance and visualize trajectories
 The performance of the trained agent is evaluated by calculating some metrics on it closed loop performance. This can be performed by running the command below. 
 
 ``` python -m experiments.test-rllib --analyse-trajectories --results-path EvaluationResults```
 
 Metrics for each episode are printed to the standard output, also median and mean values are displayed after all episodes finished. Trajectory plots and the evaluated metrics are saved to a new `EvaluationResults` folder. 
-
-![](.github/Trajectory.png)
 
 ## Copyright
 
