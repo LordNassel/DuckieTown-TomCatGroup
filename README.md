@@ -17,7 +17,7 @@ To run any demonstration or training code included in this repository, Gym-Ducki
 Clone this repository by : 
 
 ```bash
-git clone https://github.com/kaland313/Duckietown-RL.git
+git clone https://github.com/LordNassel/DuckieTown-TomCatGroup.git
 cd Duckietown-RL/
 ```
 
@@ -32,31 +32,6 @@ Before running any demonstration or training script, the installed conda environ
 
 ```conda activate dtaido5```
 
-### Using the pre-built Docker image from Docker hub (recommended)
-
-[DockerHub: kaland/duckietown-rl](https://hub.docker.com/repository/docker/kaland/duckietown-rl/)
-
-*Requirements*: [`docker`](https://docs.docker.com/get-docker/) or [`nvidia-docker`](https://github.com/NVIDIA/nvidia-docker) installed on your computer.
-
-To download and run the pre-built Docker image, run the following commands:
-
-```
-docker pull kaland/duckietown-rl:dtaido5
-docker run --rm -dt -p 2233:22 -p 7000:7000 -p 7001:7001 --name dtaido5 kaland/duckietown-rl:dtaido5
-```
-
-If your machine has an Nvidia GPU and `nvidia-docker` is set up, replace `docker` with `nvidia-docker` in the previous command.
-
-Now you should be able to ssh into the container by running: 
-
-```ssh -X -A -p 2233 duckie@localhost ```
-
-When you are asked if you trust the authenticity of host type `yes` and when prompted for a password, enter:
-
-```dt2020```
-
-:warning: Don't fortget to change the password for the `duckie` and the `root` users after login!
-
 ### Building & runnning the Docker image
 
 *Requirements*: [`docker`](https://docs.docker.com/get-docker/) or [`nvidia-docker`](https://github.com/NVIDIA/nvidia-docker) installed on your computer.
@@ -64,7 +39,7 @@ When you are asked if you trust the authenticity of host type `yes` and when pro
 Clone this repository by : 
 
 ```
-git clone https://github.com/kaland313/Duckietown-RL.git
+git clone https://github.com/LordNassel/DuckieTown-TomCatGroup.git
 cd Duckietown-RL/
 ```
 
