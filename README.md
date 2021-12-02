@@ -62,6 +62,13 @@ The same simulation can be viewed from a fixed, bird's eye perspective, instead 
 
 ``` python -m experiments.test-rllib --top-view```
 
+## Evaluate closed loop performance and visualize trajectories
+The performance of the trained agent is evaluated by calculating some metrics on it closed loop performance. This can be performed by running the command below. 
+
+``` python -m experiments.test-rllib --analyse-trajectories --results-path EvaluationResults```
+
+Metrics for each episode are printed to the standard output, also median and mean values are displayed after all episodes finished. Trajectory plots and the evaluated metrics are saved to a new `EvaluationResults` folder. 
+
 ## Copyright
 
 The hardware used in our experiments and parts of the software was developed by the [Duckietown project](https://www.duckietown.org). Software components in this repository may partially be copied or derived from the [Duckietown project's repositories](https://github.com/duckietown) and [kaland313 Duckietown_RL](https://github.com/kaland313/Duckietown-RL)
