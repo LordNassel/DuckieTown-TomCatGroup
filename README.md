@@ -1,8 +1,8 @@
 # DuckieTown-TomCatGroup
 Smartlab2021-DeepLearningInPractice
-Botond Gergő Ungvárszki - QKWFF7
-Barna Radnai - B310FB
-Gábor Lévai - AKTA7P
+[Botond Gergő Ungvárszki - QKWFF7]
+[Barna Radnai - B310FB]
+[Gábor Lévai - AKTA7P]
 
 ## Setup
 
