@@ -4,6 +4,11 @@ Smartlab2021-DeepLearningInPractice
 [Barna Radnai - B310FB]
 [Gábor Lévai - AKTA7P]
 
+## Presentation
+
+The video presentation is available on this link:
+https://youtu.be/eTrXxp1kQmo
+
 ## Setup
 
 To run any demonstration or training code included in this repository, Gym-Duckietown, and other dependencies have to be installed.
